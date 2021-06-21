@@ -3,8 +3,8 @@ import { useState } from "react";
 import AddCategory from './components/AddCategory'
 import GiffGrid from './components/GiffGrid'
 
-const GiffExpertApp = () => {
-    const [categories, setCategories] = useState(['one punch', 'samurai x', 'naruto'])
+const GiffExpertApp = ({defaultCategories = []}) => {
+    const [categories, setCategories] = useState(defaultCategories)
 
     return ( 
         <>
